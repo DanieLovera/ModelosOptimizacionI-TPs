@@ -1,0 +1,112 @@
+data;
+
+set granos := G1 G2 G3 G4 G5 G6 G7 G8 G9 G10 G11 G12;
+set destino := D1 D2 D3;
+
+param precio_granos :=  G1 145
+			G2 144
+			G3 145
+			G4 142
+			G5 138
+			G6 137
+			G7 137
+			G8 139
+			G9 127
+			G10 128
+			G11 117
+			G12 141;
+
+param disponibilidad_granos := G1 30000
+			       G2 45000
+			       G3 25000 
+			       G4 40000
+			       G5 20000
+			       G6 30000
+			       G7 75000
+			       G8 15000
+			       G9 16000
+			       G10 20000
+			       G11 10000
+			       G12 50000;
+
+param humedad_granos := G1 12
+			G2 15
+			G3 12 
+			G4 13
+			G5 15
+			G6 15
+			G7 18
+			G8 14
+			G9 17
+			G10 15
+			G11 22
+			G12 14;
+
+param densidad_granos := G1 570
+			 G2 570
+			 G3 580 
+			 G4 560
+			 G5 540
+			 G6 550
+			 G7 570
+			 G8 580
+			 G9 530
+			 G10 550
+			 G11 560
+			 G12 570;
+
+param dano_granos := G1 2
+		     G2 2
+		     G3 3 
+		     G4 4
+		     G5 4
+		     G6 4
+		     G7 5
+		     G8 2
+		     G9 7
+		     G10 8
+		     G11 9
+		     G12 3;
+
+param impureza_granos := G1 1.5
+			 G2 1
+			 G3 3 
+			 G4 2
+			 G5 2
+			 G6 3
+			 G7 1
+			 G8 4
+			 G9 5
+			 G10 3
+			 G11 5
+			 G12 2;
+						
+param demanda_minima := D1 40000
+			D2 32000
+			D3 50000;
+
+param demanda_maxima := D1 45000
+			D2 36000
+			D3 54000;
+
+param humedad_maxima := D1 13
+			D2 15.5
+			D3 15;
+
+param densidad_minima := D1 560
+			 D2 540
+			 D3 560;
+
+param dano_maximo := D1 2
+		     D2 5
+		     D3 2;
+						
+param impureza_maxima := D1 2
+			 D2 3
+			 D3 4;
+						
+param precio_venta := D1 200
+		      D2 250
+		      D3 190;
+
+end;

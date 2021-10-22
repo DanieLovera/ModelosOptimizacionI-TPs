@@ -1,0 +1,25 @@
+data;
+
+set recursos := CO AB MR ED;
+set desarrolladores := DN DE;
+
+param disponibilidad_recursos := CO 75
+                                 AB 100
+                                 MR 500
+                                 ED 200;
+
+param consumo_recursos :    DN DE :=
+                         CO 1  2
+                         AB 1  3
+                         MR 8  10
+                         ED 2  1;
+
+param demanda_desarrolladores := DN 22
+                                 DE 15;
+
+param beneficio_desarrolladores := DN 750000
+                                   DE 2250000;
+
+param disponibilidad_desarrolladores := 48;
+
+end;
