@@ -3,25 +3,25 @@ Rows:       58
 Columns:    63
 Non-zeros:  313
 Status:     OPTIMAL
-Objective:  Z = -18627000 (MAXimum)
+Objective:  Z = 18627000 (MINimum)
 
    No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
      1 dem_max[D1]  B          40000                       45000 
-     2 dem_max[D2]  NU         36000                       36000           250 
+     2 dem_max[D2]  NU         36000                       36000          -250 
      3 dem_max[D3]  B          50000                       54000 
      4 dem_min[D1]  B          40000         40000               
      5 dem_min[D2]  B          36000         32000               
-     6 dem_min[D3]  NL         50000         50000                         -10 
+     6 dem_min[D3]  NL         50000         50000                          10 
      7 hum_max[D1]  B           -100                          -0 
      8 hum_max[D2]  NU             0                          -0         < eps
      9 hum_max[D3]  B           -150                          -0 
     10 vol_min[D1]  B            400            -0               
     11 vol_min[D2]  B           1230            -0               
     12 vol_min[D3]  B            650            -0               
-    13 dan_max[D1]  NU             0                          -0         20000 
+    13 dan_max[D1]  NU             0                          -0        -20000 
     14 dan_max[D2]  B           -300                          -0 
-    15 dan_max[D3]  NU             0                          -0         20000 
+    15 dan_max[D3]  NU             0                          -0        -20000 
     16 imp_max[D1]  B           -250                          -0 
     17 imp_max[D2]  B           -420                          -0 
     18 imp_max[D3]  B          -1050                          -0 
@@ -36,35 +36,35 @@ Objective:  Z = -18627000 (MAXimum)
     27 ES_gnos[G9]  NS             0            -0             =         < eps
     28 ES_gnos[G10] NS             0            -0             =         < eps
     29 ES_gnos[G11] NS             0            -0             =         < eps
-    30 ES_gnos[G12] NS             0            -0             =          -141 
-    31 dp_gnos[G1]  NU         30000                       30000           200 
-    32 dp_gnos[G2]  NU         45000                       45000           200 
+    30 ES_gnos[G12] NS             0            -0             =           141 
+    31 dp_gnos[G1]  NU         30000                       30000          -200 
+    32 dp_gnos[G2]  NU         45000                       45000          -200 
     33 dp_gnos[G3]  B          15000                       25000 
     34 dp_gnos[G4]  B              0                       40000 
     35 dp_gnos[G5]  B              0                       20000 
     36 dp_gnos[G6]  B              0                       30000 
     37 dp_gnos[G7]  B          21000                       75000 
-    38 dp_gnos[G8]  NU         15000                       15000           200 
+    38 dp_gnos[G8]  NU         15000                       15000          -200 
     39 dp_gnos[G9]  B              0                       16000 
     40 dp_gnos[G10] B              0                       20000 
     41 dp_gnos[G11] B              0                       10000 
     42 dp_gnos[G12] B              0                       50000 
-    43 ES_dest[D1]  NS             0            -0             =           600 
+    43 ES_dest[D1]  NS             0            -0             =          -600 
     44 ES_dest[D2]  NS             0            -0             =         < eps
-    45 ES_dest[D3]  NS             0            -0             =           600 
+    45 ES_dest[D3]  NS             0            -0             =          -600 
     46 rel_hum[D1]  NS             0            -0             =         < eps
     47 rel_hum[D2]  NS             0            -0             =         < eps
     48 rel_hum[D3]  NS             0            -0             =         < eps
     49 rel_den[D1]  NS             0            -0             =         < eps
     50 rel_den[D2]  NS             0            -0             =         < eps
     51 rel_den[D3]  NS             0            -0             =         < eps
-    52 rel_dan[D1]  NS             0            -0             =        -20000 
+    52 rel_dan[D1]  NS             0            -0             =         20000 
     53 rel_dan[D2]  NS             0            -0             =         < eps
-    54 rel_dan[D3]  NS             0            -0             =        -20000 
+    54 rel_dan[D3]  NS             0            -0             =         20000 
     55 rel_imp[D1]  NS             0            -0             =         < eps
     56 rel_imp[D2]  NS             0            -0             =         < eps
     57 rel_imp[D3]  NS             0            -0             =         < eps
-    58 Z            B       2.65e+07                             
+    58 Z            B      -2.65e+07                             
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
@@ -84,41 +84,41 @@ Objective:  Z = -18627000 (MAXimum)
     14 I[D2]        B            660             0               
     15 I[D3]        B            950             0               
     16 GP[G1,D1]    B          30000             0               
-    17 GP[G1,D2]    NL             0             0                        -200 
+    17 GP[G1,D2]    NL             0             0                         200 
     18 GP[G1,D3]    NL             0             0                       < eps
     19 GP[G2,D1]    B          10000             0               
-    20 GP[G2,D2]    NL             0             0                        -200 
+    20 GP[G2,D2]    NL             0             0                         200 
     21 GP[G2,D3]    B          35000             0               
     22 GP[G3,D1]    B              0             0               
     23 GP[G3,D2]    B          15000             0               
     24 GP[G3,D3]    B              0             0               
-    25 GP[G4,D1]    NL             0             0                        -200 
+    25 GP[G4,D1]    NL             0             0                         200 
     26 GP[G4,D2]    NL             0             0                       < eps
-    27 GP[G4,D3]    NL             0             0                        -200 
-    28 GP[G5,D1]    NL             0             0                        -200 
+    27 GP[G4,D3]    NL             0             0                         200 
+    28 GP[G5,D1]    NL             0             0                         200 
     29 GP[G5,D2]    NL             0             0                       < eps
-    30 GP[G5,D3]    NL             0             0                        -200 
-    31 GP[G6,D1]    NL             0             0                        -200 
+    30 GP[G5,D3]    NL             0             0                         200 
+    31 GP[G6,D1]    NL             0             0                         200 
     32 GP[G6,D2]    NL             0             0                       < eps
-    33 GP[G6,D3]    NL             0             0                        -200 
-    34 GP[G7,D1]    NL             0             0                        -400 
+    33 GP[G6,D3]    NL             0             0                         200 
+    34 GP[G7,D1]    NL             0             0                         400 
     35 GP[G7,D2]    B          21000             0               
-    36 GP[G7,D3]    NL             0             0                        -400 
+    36 GP[G7,D3]    NL             0             0                         400 
     37 GP[G8,D1]    NL             0             0                       < eps
-    38 GP[G8,D2]    NL             0             0                        -200 
+    38 GP[G8,D2]    NL             0             0                         200 
     39 GP[G8,D3]    B          15000             0               
-    40 GP[G9,D1]    NL             0             0                        -800 
+    40 GP[G9,D1]    NL             0             0                         800 
     41 GP[G9,D2]    NL             0             0                       < eps
-    42 GP[G9,D3]    NL             0             0                        -800 
-    43 GP[G10,D1]   NL             0             0                       -1000 
+    42 GP[G9,D3]    NL             0             0                         800 
+    43 GP[G10,D1]   NL             0             0                        1000 
     44 GP[G10,D2]   NL             0             0                       < eps
-    45 GP[G10,D3]   NL             0             0                       -1000 
-    46 GP[G11,D1]   NL             0             0                       -1200 
+    45 GP[G10,D3]   NL             0             0                        1000 
+    46 GP[G11,D1]   NL             0             0                        1200 
     47 GP[G11,D2]   NL             0             0                       < eps
-    48 GP[G11,D3]   NL             0             0                       -1200 
-    49 GP[G12,D1]   NL             0             0                        -141 
-    50 GP[G12,D2]   NL             0             0                        -141 
-    51 GP[G12,D3]   NL             0             0                        -141 
+    48 GP[G11,D3]   NL             0             0                        1200 
+    49 GP[G12,D1]   NL             0             0                         141 
+    50 GP[G12,D2]   NL             0             0                         141 
+    51 GP[G12,D3]   NL             0             0                         141 
     52 GT[G1]       B          30000             0               
     53 GT[G2]       B          45000             0               
     54 GT[G3]       B          15000             0               
