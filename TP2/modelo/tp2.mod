@@ -44,7 +44,7 @@ s.t. dem_min{i in destino}: C[i] >= demanda_minima[i];
 s.t. hum_max{i in destino}: H[i] <= C[i] * 
                                     (humedad_maxima[i] / 100);
 
-/* Densidad mínima (Linealizada) */
+/* Densidad minima (Linealizada) */
 s.t. den_min{i in destino}: densidad_minima[i] * V[i] <= 1000 * C[i];
 
 /*Danio maximo de granos: */
@@ -69,7 +69,8 @@ s.t. rel_hum{j in destino}: H[j] = sum{i in granos} GP[i, j] *
                                    (humedad_granos[i] / 100);
 
 /*Relacion de volumen */
-s.t. rel_vol{j in destino}: V[j] = sum{i in granos} (1000 * GP[i, j] / densidad_granos[i]);
+s.t. rel_vol{j in destino}: V[j] = sum{i in granos} (1000 * GP[i, j] /
+			                             densidad_granos[i]);
 
 /*Relacion de danios*/
 s.t. rel_dan{j in destino}: D[j] = sum{i in granos} GP[i, j] *
