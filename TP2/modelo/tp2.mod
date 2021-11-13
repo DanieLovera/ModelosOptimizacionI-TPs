@@ -44,14 +44,12 @@ s.t. dem_min{i in destino}: C[i] >= demanda_minima[i];
 s.t. hum_max{i in destino}: H[i] <= C[i] * 
                                     (humedad_maxima[i] / 100);
 
-/*Volumen minimo de granos */
-s.t. vol_min{i in destino}: V[i] >= C[i] / 
-                                    (1000 / densidad_minima[i]);
+/* Densidad mínima (Linealizada) */
+s.t. den_min{i in destino}: densidad_minima[i] * V[i] <= 1000 * C[i];
 
 /*Danio maximo de granos: */
 s.t. dan_max{i in destino}: D[i] <= C[i] * 
                                     (dano_maximo[i] / 100);
-
 /*Impureza maxima de granos*/
 s.t. imp_max {i in destino}: I[i] <= C[i] * 
                                      (impureza_maxima[i] / 100);
@@ -70,9 +68,8 @@ s.t. ES_dest{j in destino}: C[j] = sum{i in granos} GP[i, j];
 s.t. rel_hum{j in destino}: H[j] = sum{i in granos} GP[i, j] *
                                    (humedad_granos[i] / 100);
 
-/*Relacion de densidad*/
-s.t. rel_den{j in destino}: V[j] = sum{i in granos} GP[i, j] /
-                                   (1000 / densidad_granos[i]);
+/*Relacion de volumen */
+s.t. rel_vol{j in destino}: V[j] = sum{i in granos} GP[i, j] * (1000 / densidad_granos[i]);
 
 /*Relacion de danios*/
 s.t. rel_dan{j in destino}: D[j] = sum{i in granos} GP[i, j] *
@@ -87,3 +84,4 @@ minimize Z: (sum{i in granos: i<>'G12'} precio_granos[i] *
             + (precio_granos['G12'] * GT['G12'])
             - (sum{j in destino} precio_venta[j] * C[j]);
 
+end;

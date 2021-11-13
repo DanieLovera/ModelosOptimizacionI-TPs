@@ -13,18 +13,18 @@ Objective:  Z = 18627000 (MINimum)
      4 dem_min[D1]  B          40000         40000               
      5 dem_min[D2]  B          36000         32000               
      6 dem_min[D3]  NL         50000         50000                          10 
-     7 hum_max[D1]  B           -100                          -0 
+     7 hum_max[D1]  NU             0                          -0         < eps
      8 hum_max[D2]  NU             0                          -0         < eps
-     9 hum_max[D3]  B           -150                          -0 
-    10 vol_min[D1]  B            400            -0               
-    11 vol_min[D2]  B           1230            -0               
-    12 vol_min[D3]  B            650            -0               
+     9 hum_max[D3]  B           -250                          -0 
+    10 den_min[D1]  B        -861179                          -0 
+    11 den_min[D2]  B   -2.13975e+06                          -0 
+    12 den_min[D3]  B        -971852                          -0 
     13 dan_max[D1]  NU             0                          -0        -20000 
     14 dan_max[D2]  B           -300                          -0 
     15 dan_max[D3]  NU             0                          -0        -20000 
-    16 imp_max[D1]  B           -250                          -0 
+    16 imp_max[D1]  NU             0                          -0         < eps
     17 imp_max[D2]  B           -420                          -0 
-    18 imp_max[D3]  B          -1050                          -0 
+    18 imp_max[D3]  B          -1300                          -0 
     19 ES_gnos[G1]  NS             0            -0             =         < eps
     20 ES_gnos[G2]  NS             0            -0             =         < eps
     21 ES_gnos[G3]  NS             0            -0             =         < eps
@@ -55,9 +55,9 @@ Objective:  Z = 18627000 (MINimum)
     46 rel_hum[D1]  NS             0            -0             =         < eps
     47 rel_hum[D2]  NS             0            -0             =         < eps
     48 rel_hum[D3]  NS             0            -0             =         < eps
-    49 rel_den[D1]  NS             0            -0             =         < eps
-    50 rel_den[D2]  NS             0            -0             =         < eps
-    51 rel_den[D3]  NS             0            -0             =         < eps
+    49 rel_vol[D1]  NS             0            -0             =         < eps
+    50 rel_vol[D2]  NS             0            -0             =         < eps
+    51 rel_vol[D3]  NS             0            -0             =         < eps
     52 rel_dan[D1]  NS             0            -0             =         20000 
     53 rel_dan[D2]  NS             0            -0             =         < eps
     54 rel_dan[D3]  NS             0            -0             =         20000 
@@ -71,24 +71,24 @@ Objective:  Z = 18627000 (MINimum)
      1 C[D1]        B          40000             0               
      2 C[D2]        B          36000             0               
      3 C[D3]        B          50000             0               
-     4 H[D1]        B           5100             0               
+     4 H[D1]        B           5200             0               
      5 H[D2]        B           5580             0               
-     6 H[D3]        B           7350             0               
-     7 V[D1]        B          22800             0               
-     8 V[D2]        B          20670             0               
-     9 V[D3]        B          28650             0               
+     6 H[D3]        B           7250             0               
+     7 V[D1]        B        69890.8             0               
+     8 V[D2]        B        62704.2             0               
+     9 V[D3]        B        87550.3             0               
     10 D[D1]        B            800             0               
     11 D[D2]        B           1500             0               
     12 D[D3]        B           1000             0               
-    13 I[D1]        B            550             0               
+    13 I[D1]        B            800             0               
     14 I[D2]        B            660             0               
-    15 I[D3]        B            950             0               
-    16 GP[G1,D1]    B          30000             0               
+    15 I[D3]        B            700             0               
+    16 GP[G1,D1]    B        23529.4             0               
     17 GP[G1,D2]    NL             0             0                         200 
-    18 GP[G1,D3]    NL             0             0                       < eps
-    19 GP[G2,D1]    B          10000             0               
+    18 GP[G1,D3]    B        6470.59             0               
+    19 GP[G2,D1]    B        7058.82             0               
     20 GP[G2,D2]    NL             0             0                         200 
-    21 GP[G2,D3]    B          35000             0               
+    21 GP[G2,D3]    B        37941.2             0               
     22 GP[G3,D1]    B              0             0               
     23 GP[G3,D2]    B          15000             0               
     24 GP[G3,D3]    B              0             0               
@@ -104,9 +104,9 @@ Objective:  Z = 18627000 (MINimum)
     34 GP[G7,D1]    NL             0             0                         400 
     35 GP[G7,D2]    B          21000             0               
     36 GP[G7,D3]    NL             0             0                         400 
-    37 GP[G8,D1]    NL             0             0                       < eps
+    37 GP[G8,D1]    B        9411.76             0               
     38 GP[G8,D2]    NL             0             0                         200 
-    39 GP[G8,D3]    B          15000             0               
+    39 GP[G8,D3]    B        5588.24             0               
     40 GP[G9,D1]    NL             0             0                         800 
     41 GP[G9,D2]    NL             0             0                       < eps
     42 GP[G9,D3]    NL             0             0                         800 
@@ -134,20 +134,20 @@ Objective:  Z = 18627000 (MINimum)
 
 Karush-Kuhn-Tucker optimality conditions:
 
-KKT.PE: max.abs.err = 1.46e-11 on row 45
-        max.rel.err = 2.27e-16 on row 15
+KKT.PE: max.abs.err = 1.82e-11 on row 38
+        max.rel.err = 6.06e-16 on row 38
         High quality
 
 KKT.PB: max.abs.err = 0.00e+00 on row 0
         max.rel.err = 0.00e+00 on row 0
         High quality
 
-KKT.DE: max.abs.err = 3.64e-12 on column 10
-        max.rel.err = 6.32e-14 on column 23
+KKT.DE: max.abs.err = 2.27e-13 on column 43
+        max.rel.err = 6.73e-14 on column 23
         High quality
 
-KKT.DB: max.abs.err = 5.68e-14 on column 37
-        max.rel.err = 5.68e-14 on column 37
+KKT.DB: max.abs.err = 5.45e-12 on row 7
+        max.rel.err = 5.45e-12 on row 7
         High quality
 
 End of output
