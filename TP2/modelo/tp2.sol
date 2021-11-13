@@ -134,8 +134,8 @@ Objective:  Z = 18627000 (MINimum)
 
 Karush-Kuhn-Tucker optimality conditions:
 
-KKT.PE: max.abs.err = 1.82e-11 on row 38
-        max.rel.err = 6.06e-16 on row 38
+KKT.PE: max.abs.err = 7.28e-12 on row 38
+        max.rel.err = 2.43e-16 on row 38
         High quality
 
 KKT.PB: max.abs.err = 0.00e+00 on row 0
@@ -143,7 +143,7 @@ KKT.PB: max.abs.err = 0.00e+00 on row 0
         High quality
 
 KKT.DE: max.abs.err = 2.27e-13 on column 43
-        max.rel.err = 6.73e-14 on column 23
+        max.rel.err = 4.57e-14 on column 35
         High quality
 
 KKT.DB: max.abs.err = 5.45e-12 on row 7
