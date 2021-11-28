@@ -1,0 +1,468 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 dem_max[D1]  BS   40000.00000    5000.00000          -Inf    40000.00000          -Inf          -Inf
+                                            .        45000.00000    40000.00000      10.00000    1.9027e+07 dem_min[D3]
+
+     2 dem_max[D2]  NU   36000.00000        .               -Inf    32000.00000          -Inf    1.9627e+07 dem_min[D2]
+                                        -250.00000   36000.00000    60000.00000     250.00000    1.2627e+07 dp_gnos[G3]
+
+     3 dem_max[D3]  BS   50000.00000    4000.00000          -Inf    50000.00000     -10.00000    1.8127e+07 dem_min[D3]
+                                            .        54000.00000    50000.00000          +Inf          +Inf
+
+     4 dem_min[D1]  BS   40000.00000        .        40000.00000    40000.00000          -Inf          -Inf
+                                            .               +Inf    36000.00000      10.00000    1.9027e+07 dem_min[D3]
+
+     5 dem_min[D2]  BS   36000.00000   -4000.00000   32000.00000    36000.00000          -Inf          -Inf
+                                            .               +Inf         .          250.00000    2.7627e+07 dem_max[D2]
+
+     6 dem_min[D3]  NL   50000.00000        .        50000.00000    45000.00000     -10.00000    1.8577e+07 dem_max[D1]
+                                          10.00000          +Inf    50000.00000          +Inf    1.8627e+07 dem_min[D1]
+
+     7 hum_max[D1]  NU        .             .               -Inf     -183.33333          -Inf    1.8627e+07 GP[G1,D3]
+                                            .             .           666.66667        .         1.8627e+07 GP[G1,D1]
+
+     8 hum_max[D2]  NU        .             .               -Inf     -600.00000          -Inf    1.8627e+07 dp_gnos[G3]
+                                            .             .           900.00000        .         1.8627e+07 dan_max[D2]
+
+     9 hum_max[D3]  BS    -250.00000     250.00000          -Inf      -66.66667        .         1.8627e+07 hum_max[D1]
+                                            .             .          -250.00000     500.00000    1.8502e+07 dem_min[D3]
+
+    10 den_min[D1]  BS -861179.31746  861179.31746          -Inf  -842911.87739        .         1.8627e+07 hum_max[D1]
+                                            .             .       -861179.31746          +Inf          -Inf
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 den_min[D2]  BS  -2.13975e+06   2.13975e+06          -Inf   -1.28957e+06        .         1.8627e+07 GP[G9,D2]
+                                            .             .        -2.30309e+06        .         1.8627e+07 hum_max[D2]
+
+    12 den_min[D3]  BS -971851.53553  971851.53553          -Inf  -971851.53553      -2.36762    2.0928e+07 GP[G5,D3]
+                                            .             .       -990118.97560        .         1.8627e+07 hum_max[D1]
+
+    13 dan_max[D1]  NU        .             .               -Inf         .               -Inf    1.8627e+07 GP[G3,D1]
+                                      -20000.00000        .            50.00000   20000.00000    1.7627e+07 dem_max[D1]
+
+    14 dan_max[D2]  BS    -300.00000     300.00000          -Inf      500.00000        .         1.8627e+07 GP[G10,D2]
+                                            .             .          -500.00000        .         1.8627e+07 hum_max[D2]
+
+    15 dan_max[D3]  NU        .             .               -Inf         .               -Inf    1.8627e+07 GP[G3,D3]
+                                      -20000.00000        .            50.00000   20000.00000    1.7627e+07 dem_max[D1]
+
+    16 imp_max[D1]  NU        .             .               -Inf     -266.66667          -Inf    1.8627e+07 GP[G8,D1]
+                                            .             .           158.33333        .         1.8627e+07 GP[G8,D3]
+
+    17 imp_max[D2]  BS    -420.00000     420.00000          -Inf     -220.00000        .         1.8627e+07 hum_max[D2]
+                                            .             .          -540.00000        .         1.8627e+07 GP[G4,D2]
+
+    18 imp_max[D3]  BS   -1300.00000    1300.00000          -Inf    -1033.33333        .         1.8627e+07 imp_max[D1]
+                                            .             .         -1300.00000     500.00000    1.7977e+07 dem_min[D3]
+
+    19 ES_gnos[G1]  NS        .             .             .        -30000.00000          -Inf    1.8627e+07 GT[G1]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    20 ES_gnos[G2]  NS        .             .             .        -45000.00000          -Inf    1.8627e+07 GT[G2]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 ES_gnos[G3]  NS        .             .             .        -15000.00000          -Inf    1.8627e+07 GT[G3]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    22 ES_gnos[G4]  NS        .             .             .              .               -Inf    1.8627e+07 GT[G4]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    23 ES_gnos[G5]  NS        .             .             .              .               -Inf    1.8627e+07 GT[G5]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    24 ES_gnos[G6]  NS        .             .             .              .               -Inf    1.8627e+07 GT[G6]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    25 ES_gnos[G7]  NS        .             .             .        -21000.00000          -Inf    1.8627e+07 GT[G7]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    26 ES_gnos[G8]  NS        .             .             .        -15000.00000          -Inf    1.8627e+07 GT[G8]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    27 ES_gnos[G9]  NS        .             .             .              .               -Inf    1.8627e+07 GT[G9]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    28 ES_gnos[G10] NS        .             .             .              .               -Inf    1.8627e+07 GT[G10]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    29 ES_gnos[G11] NS        .             .             .              .               -Inf    1.8627e+07 GT[G11]
+                                            .             .                +Inf          +Inf    1.8627e+07
+
+    30 ES_gnos[G12] NS        .             .             .              .               -Inf    1.8627e+07 GT[G12]
+                                         141.00000        .                +Inf          +Inf          +Inf
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 dp_gnos[G1]  NU   30000.00000        .               -Inf    30000.00000          -Inf    1.8627e+07 dem_min[D1]
+                                        -200.00000   30000.00000    35000.00000     200.00000    1.7627e+07 dem_max[D1]
+
+    32 dp_gnos[G2]  NU   45000.00000        .               -Inf    45000.00000          -Inf    1.8627e+07 dem_min[D1]
+                                        -200.00000   45000.00000    50000.00000     200.00000    1.7627e+07 dem_max[D1]
+
+    33 dp_gnos[G3]  BS   15000.00000   10000.00000          -Inf    36000.00000        .         1.8627e+07 hum_max[D2]
+                                            .        25000.00000     5000.00000        .         1.8627e+07 GP[G5,D2]
+
+    34 dp_gnos[G4]  BS        .        40000.00000          -Inf    18000.00000        .         1.8627e+07 GP[G4,D2]
+                                            .        40000.00000         .               +Inf    1.8627e+07
+
+    35 dp_gnos[G5]  BS        .        20000.00000          -Inf    30000.00000        .         1.8627e+07 GP[G5,D2]
+                                            .        20000.00000         .               +Inf    1.8627e+07
+
+    36 dp_gnos[G6]  BS        .        30000.00000          -Inf    30000.00000        .         1.8627e+07 GP[G6,D2]
+                                            .        30000.00000         .               +Inf    1.8627e+07
+
+    37 dp_gnos[G7]  BS   21000.00000   54000.00000          -Inf    21000.00000    -400.00000    1.0227e+07 GP[G7,D1]
+                                            .        75000.00000    11000.00000        .         1.8627e+07 hum_max[D2]
+
+    38 dp_gnos[G8]  NU   15000.00000        .               -Inf    15000.00000          -Inf    1.8627e+07 dem_min[D1]
+                                        -200.00000   15000.00000    20000.00000     200.00000    1.7627e+07 dem_max[D1]
+
+    39 dp_gnos[G9]  BS        .        16000.00000          -Inf    11454.54545        .         1.8627e+07 GP[G9,D2]
+                                            .        16000.00000         .               +Inf    1.8627e+07
+
+    40 dp_gnos[G10] BS        .        20000.00000          -Inf     7500.00000        .         1.8627e+07 GP[G10,D2]
+                                            .        20000.00000         .               +Inf    1.8627e+07
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 dp_gnos[G11] BS        .        10000.00000          -Inf     7875.00000        .         1.8627e+07 GP[G11,D2]
+                                            .        10000.00000         .               +Inf    1.8627e+07
+
+    42 dp_gnos[G12] BS        .        50000.00000          -Inf         .         -141.00000    1.8627e+07 GP[G12,D1]
+                                            .        50000.00000         .               +Inf    1.8627e+07
+
+    43 ES_dest[D1]  NS        .             .             .              .               -Inf    1.8627e+07 GP[G3,D1]
+                                        -600.00000        .          1666.66667          +Inf    1.7627e+07 dem_max[D1]
+
+    44 ES_dest[D2]  NS        .             .             .         -2381.81818          -Inf    1.8627e+07 den_min[D2]
+                                            .             .          5000.00000          +Inf    1.8627e+07 GP[G3,D2]
+
+    45 ES_dest[D3]  NS        .             .             .              .               -Inf    1.8627e+07 GP[G3,D3]
+                                        -600.00000        .          1666.66667          +Inf    1.7627e+07 dem_max[D1]
+
+    46 rel_hum[D1]  NS        .             .             .          -666.66667          -Inf    1.8627e+07 GP[G1,D1]
+                                            .             .           183.33333          +Inf    1.8627e+07 GP[G1,D3]
+
+    47 rel_hum[D2]  NS        .             .             .          -900.00000          -Inf    1.8627e+07 dan_max[D2]
+                                            .             .           600.00000          +Inf    1.8627e+07 dp_gnos[G3]
+
+    48 rel_hum[D3]  NS        .             .             .         -7250.00000          -Inf    1.8627e+07 H[D3]
+                                            .             .           250.00000          +Inf    1.8627e+07 hum_max[D3]
+
+    49 rel_vol[D1]  NS        .             .             .        -69890.75122          -Inf    1.8627e+07 V[D1]
+                                            .             .          1537.82021          +Inf    1.8627e+07 den_min[D1]
+
+    50 rel_vol[D2]  NS        .             .             .        -62704.17423          -Inf    1.8627e+07 V[D2]
+                                            .             .          3962.49244          +Inf    1.8627e+07 den_min[D2]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   6
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    51 rel_vol[D3]  NS        .             .             .        -87550.26512          -Inf    1.8627e+07 V[D3]
+                                            .             .          1735.44917          +Inf    1.8627e+07 den_min[D3]
+
+    52 rel_dan[D1]  NS        .             .             .           -50.00000          -Inf    1.7627e+07 dem_max[D1]
+                                       20000.00000        .              .               +Inf    1.8627e+07 GP[G3,D1]
+
+    53 rel_dan[D2]  NS        .             .             .         -1500.00000          -Inf    1.8627e+07 D[D2]
+                                            .             .           300.00000          +Inf    1.8627e+07 dan_max[D2]
+
+    54 rel_dan[D3]  NS        .             .             .           -50.00000          -Inf    1.7627e+07 dem_max[D1]
+                                       20000.00000        .              .               +Inf    1.8627e+07 GP[G3,D3]
+
+    55 rel_imp[D1]  NS        .             .             .          -158.33333          -Inf    1.8627e+07 GP[G8,D3]
+                                            .             .           266.66667          +Inf    1.8627e+07 GP[G8,D1]
+
+    56 rel_imp[D2]  NS        .             .             .          -660.00000          -Inf    1.8627e+07 I[D2]
+                                            .             .           420.00000          +Inf    1.8627e+07 imp_max[D2]
+
+    57 rel_imp[D3]  NS        .             .             .          -700.00000          -Inf    1.8627e+07 I[D3]
+                                            .             .          1300.00000          +Inf    1.8627e+07 imp_max[D3]
+
+    58 Z            BS     -2.65e+07      2.65e+07          -Inf      -2.65e+07      -1.00000    4.5127e+07 GP[G7,D1]
+                                            .               +Inf      -2.65e+07          +Inf          -Inf
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   7
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 C[D1]        BS   40000.00000    -200.00000        .         40000.00000          -Inf          -Inf
+                                            .               +Inf    40000.00000    -190.00000    1.9027e+07 dem_min[D3]
+
+     2 C[D2]        BS   36000.00000    -250.00000        .         36000.00000          -Inf          -Inf
+                                            .               +Inf    32000.00000        .         2.7627e+07 dem_max[D2]
+
+     3 C[D3]        BS   50000.00000    -190.00000        .         50000.00000    -200.00000    1.8127e+07 dem_min[D3]
+                                            .               +Inf    50000.00000          +Inf          +Inf
+
+     4 H[D1]        BS    5200.00000        .             .          5200.00000          -Inf          -Inf
+                                            .               +Inf     5016.66667        .         1.8627e+07 hum_max[D1]
+
+     5 H[D2]        BS    5580.00000        .             .          5580.00000          -Inf          -Inf
+                                            .               +Inf     4980.00000        .         1.8627e+07 hum_max[D2]
+
+     6 H[D3]        BS    7250.00000        .             .          7433.33333        .         1.8627e+07 hum_max[D1]
+                                            .               +Inf     7250.00000   10000.00000    9.1127e+07 dp_gnos[G2]
+
+     7 V[D1]        BS   69890.75122        .             .         69923.37165        .         1.8627e+07 hum_max[D1]
+                                            .               +Inf    69890.75122       5.72322    1.9027e+07 dem_min[D3]
+
+     8 V[D2]        BS   62704.17423        .             .         64278.57661        .         1.8627e+07 GP[G9,D2]
+                                            .               +Inf    62401.69389        .         1.8627e+07 hum_max[D2]
+
+     9 V[D3]        BS   87550.26512        .             .         87550.26512      -5.72322   1.81259e+07 dem_min[D3]
+                                            .               +Inf    87517.64469        .         1.8627e+07 hum_max[D1]
+
+    10 D[D1]        BS     800.00000        .             .           800.00000          -Inf          -Inf
+                                            .               +Inf      800.00000     500.00000    1.9027e+07 dem_min[D3]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   8
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 D[D2]        BS    1500.00000        .             .          1800.00000        .         1.8627e+07 GP[G10,D2]
+                                            .               +Inf     1300.00000        .         1.8627e+07 hum_max[D2]
+
+    12 D[D3]        BS    1000.00000        .             .          1000.00000    -500.00000    1.8127e+07 dem_min[D3]
+                                            .               +Inf     1000.00000   20000.00000    3.8627e+07 dan_max[D3]
+
+    13 I[D1]        BS     800.00000        .             .           800.00000          -Inf          -Inf
+                                            .               +Inf      533.33333        .         1.8627e+07 imp_max[D1]
+
+    14 I[D2]        BS     660.00000        .             .           860.00000        .         1.8627e+07 hum_max[D2]
+                                            .               +Inf      540.00000        .         1.8627e+07 GP[G4,D2]
+
+    15 I[D3]        BS     700.00000        .             .           966.66667        .         1.8627e+07 imp_max[D1]
+                                            .               +Inf      700.00000   10000.00000    2.5627e+07 GP[G7,D1]
+
+    16 GP[G1,D1]    BS   23529.41176        .             .         30000.00000        .         1.8627e+07 hum_max[D1]
+                                            .               +Inf    23529.41176      17.00000    1.9027e+07 dem_min[D3]
+
+    17 GP[G1,D2]    NL        .             .             .         -5000.00000    -200.00000    1.7627e+07 dem_max[D1]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 dem_min[D1]
+
+    18 GP[G1,D3]    BS    6470.58824        .             .          6470.58824     -17.00000    1.8517e+07 dem_min[D3]
+                                            .               +Inf    -2000.00000        .         1.8627e+07 hum_max[D1]
+
+    19 GP[G2,D1]    BS    7058.82353        .             .         13333.33333        .         1.8627e+07 imp_max[D1]
+                                            .               +Inf     1666.66667        .         1.8627e+07 hum_max[D1]
+
+    20 GP[G2,D2]    NL        .             .             .         -5000.00000    -200.00000    1.7627e+07 dem_max[D1]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 dem_min[D1]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   9
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 GP[G2,D3]    BS   37941.17647        .             .         43333.33333        .         1.8627e+07 hum_max[D1]
+                                            .               +Inf    31666.66667        .         1.8627e+07 imp_max[D1]
+
+    22 GP[G3,D1]    BS        .             .             .              .               -Inf    1.8627e+07
+                                            .               +Inf         .          100.00000    1.8627e+07 GP[G5,D1]
+
+    23 GP[G3,D2]    BS   15000.00000        .             .         25000.00000        .         1.8627e+07 hum_max[D2]
+                                            .               +Inf     5000.00000        .         1.8627e+07 GP[G5,D2]
+
+    24 GP[G3,D3]    BS        .             .             .              .               -Inf    1.8627e+07
+                                            .               +Inf         .          100.00000    1.8627e+07 GP[G4,D3]
+
+    25 GP[G4,D1]    NL        .             .             .              .         -200.00000    1.8627e+07 GT[G4]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D1]
+
+    26 GP[G4,D2]    NL        .             .             .              .             .         1.8627e+07 GT[G4]
+                                            .               +Inf    18000.00000          +Inf    1.8627e+07 GP[G3,D2]
+
+    27 GP[G4,D3]    NL        .             .             .              .         -200.00000    1.8627e+07 GT[G4]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D3]
+
+    28 GP[G5,D1]    NL        .             .             .              .         -200.00000    1.8627e+07 GT[G5]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D1]
+
+    29 GP[G5,D2]    NL        .             .             .              .             .         1.8627e+07 GT[G5]
+                                            .               +Inf    20000.00000          +Inf    1.8627e+07 dp_gnos[G5]
+
+    30 GP[G5,D3]    NL        .             .             .              .         -200.00000    1.8627e+07 GT[G5]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D3]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  10
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 GP[G6,D1]    NL        .             .             .              .         -200.00000    1.8627e+07 GT[G6]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D1]
+
+    32 GP[G6,D2]    NL        .             .             .              .             .         1.8627e+07 GT[G6]
+                                            .               +Inf    30000.00000          +Inf    1.8627e+07 GP[G3,D2]
+
+    33 GP[G6,D3]    NL        .             .             .              .         -200.00000    1.8627e+07 GT[G6]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D3]
+
+    34 GP[G7,D1]    NL        .             .             .         -2500.00000    -400.00000    1.7627e+07 dem_max[D1]
+                                         400.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D1]
+
+    35 GP[G7,D2]    BS   21000.00000        .             .         21000.00000          -Inf          -Inf
+                                            .               +Inf    11000.00000        .         1.8627e+07 hum_max[D2]
+
+    36 GP[G7,D3]    NL        .             .             .         -2500.00000    -400.00000    1.7627e+07 dem_max[D1]
+                                         400.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D3]
+
+    37 GP[G8,D1]    BS    9411.76471        .             .          9411.76471    -340.00000    1.5427e+07 GP[G4,D1]
+                                            .               +Inf     8333.33333        .         1.8627e+07 hum_max[D1]
+
+    38 GP[G8,D2]    NL        .             .             .         -5000.00000    -200.00000    1.7627e+07 dem_max[D1]
+                                         200.00000          +Inf         .               +Inf    1.8627e+07 dem_min[D1]
+
+    39 GP[G8,D3]    BS    5588.23529        .             .          6666.66667        .         1.8627e+07 hum_max[D1]
+                                            .               +Inf     5588.23529     261.53846   2.00885e+07 dp_gnos[G8]
+
+    40 GP[G9,D1]    NL        .             .             .              .         -800.00000    1.8627e+07 GT[G9]
+                                         800.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D1]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  11
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 GP[G9,D2]    NL        .             .             .              .             .         1.8627e+07 GT[G9]
+                                            .               +Inf    11454.54545          +Inf    1.8627e+07 imp_max[D2]
+
+    42 GP[G9,D3]    NL        .             .             .              .         -800.00000    1.8627e+07 GT[G9]
+                                         800.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D3]
+
+    43 GP[G10,D1]   NL        .             .             .              .        -1000.00000    1.8627e+07 GT[G10]
+                                        1000.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D1]
+
+    44 GP[G10,D2]   NL        .             .             .              .             .         1.8627e+07 GT[G10]
+                                            .               +Inf     7500.00000          +Inf    1.8627e+07 dan_max[D2]
+
+    45 GP[G10,D3]   NL        .             .             .              .        -1000.00000    1.8627e+07 GT[G10]
+                                        1000.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D3]
+
+    46 GP[G11,D1]   NL        .             .             .              .        -1200.00000    1.8627e+07 GT[G11]
+                                        1200.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D1]
+
+    47 GP[G11,D2]   NL        .             .             .              .             .         1.8627e+07 GT[G11]
+                                            .               +Inf     7875.00000          +Inf    1.8627e+07 imp_max[D2]
+
+    48 GP[G11,D3]   NL        .             .             .              .        -1200.00000    1.8627e+07 GT[G11]
+                                        1200.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D3]
+
+    49 GP[G12,D1]   NL        .             .             .              .         -141.00000    1.8627e+07 GT[G12]
+                                         141.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D1]
+
+    50 GP[G12,D2]   NL        .             .             .              .         -141.00000    1.8627e+07 GT[G12]
+                                         141.00000          +Inf    22500.00000          +Inf   2.17995e+07 GP[G3,D2]
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  12
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    51 GP[G12,D3]   NL        .             .             .              .         -141.00000    1.8627e+07 GT[G12]
+                                         141.00000          +Inf         .               +Inf    1.8627e+07 GP[G3,D3]
+
+    52 GT[G1]       BS   30000.00000        .             .         30000.00000          -Inf          -Inf
+                                            .               +Inf    30000.00000     200.00000    2.4627e+07 dp_gnos[G1]
+
+    53 GT[G2]       BS   45000.00000        .             .         45000.00000          -Inf          -Inf
+                                            .               +Inf    45000.00000     200.00000    2.7627e+07 dp_gnos[G2]
+
+    54 GT[G3]       BS   15000.00000        .             .         25000.00000        .         1.8627e+07 hum_max[D2]
+                                            .               +Inf     5000.00000        .         1.8627e+07 GP[G5,D2]
+
+    55 GT[G4]       BS        .             .             .         18000.00000        .         1.8627e+07 GP[G4,D2]
+                                            .               +Inf         .               +Inf    1.8627e+07
+
+    56 GT[G5]       BS        .             .             .         20000.00000        .         1.8627e+07 GP[G5,D2]
+                                            .               +Inf         .               +Inf    1.8627e+07
+
+    57 GT[G6]       BS        .             .             .         30000.00000        .         1.8627e+07 GP[G6,D2]
+                                            .               +Inf         .               +Inf    1.8627e+07
+
+    58 GT[G7]       BS   21000.00000        .             .         21000.00000    -400.00000    1.0227e+07 GP[G7,D1]
+                                            .               +Inf    11000.00000        .         1.8627e+07 hum_max[D2]
+
+    59 GT[G8]       BS   15000.00000        .             .         15000.00000          -Inf          -Inf
+                                            .               +Inf    15000.00000     200.00000    2.1627e+07 dp_gnos[G8]
+
+    60 GT[G9]       BS        .             .             .         11454.54545        .         1.8627e+07 GP[G9,D2]
+                                            .               +Inf         .               +Inf    1.8627e+07
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  13
+
+Problem:    tp2
+Objective:  Z = 18627000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    61 GT[G10]      BS        .             .             .          7500.00000        .         1.8627e+07 GP[G10,D2]
+                                            .               +Inf         .               +Inf    1.8627e+07
+
+    62 GT[G11]      BS        .             .             .          7875.00000        .         1.8627e+07 GP[G11,D2]
+                                            .               +Inf         .               +Inf    1.8627e+07
+
+    63 GT[G12]      BS        .          141.00000        .              .             .         1.8627e+07 GP[G12,D1]
+                                            .               +Inf         .               +Inf    1.8627e+07
+
+End of report

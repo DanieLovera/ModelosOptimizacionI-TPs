@@ -2,7 +2,7 @@
  * 
  * Compilacion del modelo:
  * 		glpsol -m tp2.mod -d tp2.dat -o tp2.sol
- * 
+ *		glpsol -m tp2.mod -d tp2.dat --ranges tp2.sen 
  * Observacion: Los archivos .mod y .dat deberan estar en 
  * el mismo directorio, esto generara un archivo tp2.sol 
  * con los resultados de la corrida.
